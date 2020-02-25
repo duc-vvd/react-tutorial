@@ -3,6 +3,17 @@
     font-weight: 300;
     font-size: 24px;
     color: #4d4d4d;
+    padding: 10px 5px;
+    border-bottom: 1px solid #bebebe;
+    display: flex;
+}
+
+.TodoItem > p {
+    margin: 0 0 0 10px;
+}
+
+.TodoItem:last-child {
+    border: none;
 }
 
 .TodoItem-complete {
