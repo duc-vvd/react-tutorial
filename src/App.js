@@ -10,8 +10,8 @@ class App extends Component {
       newItem: '',
       todoItems : [
         {title: 'Đi đá bóng', isComplete: true}, 
-        {title: 'Đi bơi', isComplete: true}, 
-        {title: 'Đi tắm'}
+        {title: 'Đi bơi', isComplete: false}, 
+        {title: 'Đi tắm', isComplete: false}
       ]};
       this.onKeyUp = this.onKeyUp.bind(this);
       this.onChange = this.onChange.bind(this);
@@ -69,7 +69,7 @@ class App extends Component {
             <TodoItem 
               key={index} 
               item={item} 
-              click={this.onItemClick(item)}/>
+              onClick={this.onItemClick(item)}/>
           )
         }
         { todoItems.length === 0 && "Nothing here."}
